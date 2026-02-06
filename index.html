@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mic_wave</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>🎤 mic_wave</h1>
+        <p class="subtitle">live audio visualization</p>
+      </header>
+
+      <div class="controls">
+        <button id="toggleBtn" class="btn-primary">Record</button>
+        <div class="status">
+          <span id="statusText">Click Record to begin</span>
+        </div>
+      </div>
+
+      <div class="visualizer">
+        <canvas id="waveform"></canvas>
+      </div>
+
+      <footer>
+        <p class="info">Using Web Audio API + Canvas</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
